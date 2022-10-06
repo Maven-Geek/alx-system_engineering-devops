@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "${ls}"
+find . -maxdepth 1 -type f -not -path '*/\.*' | sed 's/^\.\///g' | sort
